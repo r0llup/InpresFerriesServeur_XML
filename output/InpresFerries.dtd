@@ -1,0 +1,34 @@
+<!ELEMENT Ferry (Monnaie,Meteo,Freetax)>
+<!ATTLIST Ferry name #PCDATA>
+<!ATTLIST Ferry voyageur #PCDATA>
+<!ELEMENT Monnaie (Cours)>
+<!ATTLIST Cours facteurConversion #PCDATA>
+<!ATTLIST Cours paysFrom #PCDATA>
+<!ATTLIST Cours paysTo #PCDATA>
+<!ATTLIST Cours uniteMonetairePaysFrom #PCDATA>
+<!ATTLIST Cours uniteMonetairePaysTo #PCDATA>
+<!ELEMENT Meteo (Situation)>
+<!ELEMENT Situation (Dates)>
+<!ATTLIST Situation region #PCDATA>
+<!ATTLIST Situation pays #PCDATA>
+<!ELEMENT Dates (Jour)>
+<!ATTLIST Jour jour #PCDATA>
+<!ATTLIST Jour temperature #PCDATA>
+<!ATTLIST Jour forceVent #PCDATA>
+<!ATTLIST Jour typeTemps #PCDATA>
+<!ELEMENT Freetax (Alcools,Parfums,Tabacs)>
+<!ELEMENT Alcools>
+<!ATTLIST Alcools marque #PCDATA>
+<!ATTLIST Alcools nom #PCDATA>
+<!ATTLIST Alcools prix #PCDATA>
+<!ATTLIST Alcools quantite #PCDATA>
+<!ELEMENT Parfums>
+<!ATTLIST Parfums marque #PCDATA>
+<!ATTLIST Parfums nom #PCDATA>
+<!ATTLIST Parfums prix #PCDATA>
+<!ATTLIST Parfums quantite #PCDATA>
+<!ELEMENT Tabacs>
+<!ATTLIST Tabacs marque #PCDATA>
+<!ATTLIST Tabacs nom #PCDATA>
+<!ATTLIST Tabacs prix #PCDATA>
+<!ATTLIST Tabacs quantite #PCDATA>
